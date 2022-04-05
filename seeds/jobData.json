@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Javascript Developer",
+    "description": "A Developer proficient in Javascript for a short project",
+    "skills": "Javascript, Node, HTML"
+  },
+  {
+    "name": "Front End Developer",
+    "description": "My website is ugly please help",
+    "skills": "HTML, CSS"
+  },
+  {
+    "name": "Database Admin",
+    "description": "My database needs administration",
+    "skills": "SQL"
+  }
+]
