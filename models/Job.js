@@ -11,11 +11,15 @@ Job.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    employer_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
     name: {
       type: DataTypes.STRING,
     },
     description: {
-        type: Datatypes.STRING,
+        type: DataTypes.STRING,
     },
     skills:{
         type: DataTypes.STRING,

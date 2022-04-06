@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Adam",
+    "email": "adam@test.com",
+    "skills": "html, css",
+    "password": "password12345"
+  },
+  {
+    "name": "Beth",
+    "email": "beth@test.com",
+    "skills": "javascript",
+    "password": "password12345"
+  },
+  {
+    "name": "Chris",
+    "email": "chris@test.com",
+    "skills": "sql, node",
+    "password": "password12345"
+  }
+]
