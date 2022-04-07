@@ -4,4 +4,4 @@ const User = require('./User');
 
 // Write associations
 
-// module.exports = {};
+module.exports = { Employer, Job, User };
