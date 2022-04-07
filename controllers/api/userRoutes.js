@@ -1,6 +1,66 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
+router.get('/', (req, res) => {
+    User.findAll()
+    .then((results) => {
+      res.json(results);
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+  });
+
+//Add route
+
+  router.post('/', (req, res) => {
+    /* req.body should look like this...
+      {
+        Name: "John Doe",
+        Skills: "Javascript",
+        Email: "test@test.com",
+        Password: Test1234
+      }
+    */
+    User.create(req.body)
+      .then((user) => {
+        res.status(200).json(job);
+      })
+      .catch((err) => {
+        console.log(err);
+        res.status(400).json(err);
+      });
+  });
+ 
+//Delete
+
+router.delete('/:id', (req, res) => {
+    // delete one product by its `id` value
+    user.destroy({
+      where: {
+        id: req.params.id,
+      },
+    })
+      .then((results) => {
+        // if no results, set status to 404 and inform user no results for that ID
+        if (!results) {
+          res.status(404).json({
+            message: `No results found with ID ${req.params.id} found. Please try again with a different ID.`,
+          });
+          return;
+        }
+        // else, respond with results
+        res.json(results);
+      })
+      .catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  });
+  
+  module.exports = router;
+
 router.post('/', async (req, res) => {
   try {
     const userData = await User.create(req.body);
