@@ -17,7 +17,7 @@
     <h1>Welcome Yeet-a-Job</h1>
   </header>
   <nav>
-    <a href="/">Home</a>
+    <a class="nav--link" href="/">Home</a>
     <!-- If the user is logged in, show a logout button -->
     {{#if loggedIn}}
     <button id="logout" class="btn-no-style">Logout</button>
@@ -33,7 +33,7 @@
   </main>
   <!-- If the user is logged in, load the JS script for when they logout -->
   {{#if loggedIn}}
-  <script></script>
+  <script src="../../public/lib/logout.js"></script>
   {{/if}}
 </body>
 

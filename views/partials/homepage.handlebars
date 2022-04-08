@@ -4,7 +4,7 @@
   <h4 class="job__salary">{{job.salary}}</h4>
   <p class="job__description">{{job.description}}</p>
   <p class="job__email">{{job.email}}</p>
-  <!-- If the user is logged in, render the gallery content -->
+  <!-- If the user is logged in, render the content -->
   {{#if loggedIn}}
   <section class="flex-row justify-center">
     {{#each listings as |listing|}}
