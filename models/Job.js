@@ -28,17 +28,16 @@ Job.init(
     skills: {
         type: DataTypes.STRING,
     },
-    salary: {
-      type: DataTypes.INTEGER,
-    },
     email: {
-      type: DataTypes.STRING,
-      allowNull: true,
-      references: {
-        model: 'employer',
-        key: 'id'
-      }
-    }
+        type: DataTypes.STRING,
+        references: {
+          model: 'employer',
+          key: 'email'
+        },
+        validate: {
+          isEmail: true
+        },
+    },
   },
   {
     sequelize,
