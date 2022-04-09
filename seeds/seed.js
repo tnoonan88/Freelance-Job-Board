@@ -16,7 +16,7 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  const employers = await User.bulkCreate(employerData, {
+  const employers = await Employer.bulkCreate(employerData, {
     individualHooks: true,
     returning: true,
   });
