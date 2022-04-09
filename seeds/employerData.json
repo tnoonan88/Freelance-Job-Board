@@ -1,14 +1,17 @@
 [
   {
     "name": "Big Corp",
-    "email": "HR@bigcorp.com"
+    "email": "HR@bigcorp.com",
+    "password": "password12345"
   },
   {
     "name": "Mom & Pop Co",
-    "email": "mom123@aol.com"
+    "email": "mom123@aol.com",
+    "password": "password12345"
   },
   {
     "name": "Employees of the Month LLC",
-    "email": "zachpcodes@gmail.com"
+    "email": "zachpcodes@gmail.com",
+    "password": "password12345"
   }
 ]
