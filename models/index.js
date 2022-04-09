@@ -4,12 +4,12 @@ const User = require('./User');
 
 // Write associations
 Job.belongsTo(Employer, {
-    foreignKey: 'employer_id',
+    foreignKey: 'employer_email',
     onDelete: 'CASCADE'
 });
 
 Employer.hasMany(Job, {
-    foreignKey: 'employer_id',
+    foreignKey: 'employer_email',
 });
 
 
