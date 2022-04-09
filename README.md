@@ -1,6 +1,6 @@
 # Freelance-Job-Board
 
-
+Yeet-A-Job is a platform tailored to Employers and Freelance coders to find and post jobs. We have setup separate accounts for Employers and Freelancers to access the side of the site they need. Employers will be able to post jobs with certain criteria while Freelancers are able to choose jobs based on their own criteria.
 
 As A User, I want to be able to find commissions to fit my skill set.
 
