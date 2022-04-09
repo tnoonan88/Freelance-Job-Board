@@ -23,6 +23,14 @@ Job.init(
     },
     skills:{
         type: DataTypes.STRING,
+    },
+    email: {
+        type: DataTypes.STRING,
+        validate: {
+          isEmail: true
+        },
+        references: 'employer',
+        key: 'id'
     }
   },
   {
