@@ -26,12 +26,14 @@ Job.init(
     },
     email: {
         type: DataTypes.STRING,
+        references: {
+          model: 'employer',
+          key: 'email'
+        },
         validate: {
           isEmail: true
         },
-        references: 'employer',
-        key: 'id'
-    }
+    },
   },
   {
     sequelize,
