@@ -8,9 +8,17 @@ Job.belongsTo(Employer, {
     onDelete: 'CASCADE'
 });
 
+Job.belongsTo(Employer, {
+    foreignKey: 'employer_id',
+    onDelete: 'CASCADE'
+});
+
 Employer.hasMany(Job, {
     foreignKey: 'employer_email',
 });
 
+Employer.hasMany(Job, {
+    foreignKey: 'employer_id',
+});
 
 module.exports = { Employer, Job, User };
