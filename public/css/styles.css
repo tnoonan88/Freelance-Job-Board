@@ -1,3 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+--color-primary: #4ceefd;
+--color-secondary: #8c74f9;
+--color-accent: #ff248a;
+}
+
+
 html {
   font-size: 62.5%;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  background-image: url("/images/rose-petals.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Cabin', sans-serif;
+  height: 100%;
+  margin-top: 5rem;
+}
+
+h1 {
+  color: var(--color-primary);
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 6rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+}
+
+.btn {
+  background-color: var(--color-secondary);
+  border-radius: 40px;
+  border: 0;
+  color: var(--color-primary);
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  outline: 0;
+  padding: 2rem 2vw;
+  text-align: center;
+  text-transform: uppercase;
+  transition: color 0.3s;
+  white-space: nowrap;
+}
+
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 2rem;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.card__title {
+  padding-bottom: 2rem;
+}
+
+/*.container {
+  padding-left: 10rem;
+}*/
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.footer--link {
+  margin-right: 3rem;
+  color: var(--color-secondary);
+  margin-left: 10rem;
+  margin-top: 5rem;
+  transition: color 0.3s;
+}
+
+.label {
+  padding-left: 2rem;
+}
+
+label {
+  display: inline-block;
+  font-size: 1.5rem;
+  width: 10rem;
+}
+
+
+.hero--image {
+  height: 60vh;
+  padding-bottom: 10rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+}
+
+.nav--link {
+  margin-right: 3rem;
+  color: var(--color-secondary);
+  margin-left: 10rem;
+  transition: color 0.3s;
+}
+
+.redirect--link {
+  display: flex;
+  font-size: 4rem;
+  justify-content: center;
+  color: var(--color-accent);
+  margin-top: 5rem;
+}
+
+.redirect--link:hover {
+  transition: color .03s;
 }

@@ -16,8 +16,8 @@ Job.init(
       allowNull: false,
       references: {
         model: 'employer',
-        key: 'id',
-      }
+        key: 'id'
+      },
     },
     title: {
       type: DataTypes.STRING,
