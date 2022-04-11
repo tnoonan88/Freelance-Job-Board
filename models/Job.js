@@ -14,16 +14,30 @@ Job.init(
     employer_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      references: {
+        model: 'employer',
+        key: 'id'
+      },
     },
-    name: {
+    title: {
       type: DataTypes.STRING,
     },
     description: {
         type: DataTypes.STRING,
     },
-    skills:{
+    skills: {
         type: DataTypes.STRING,
-    }
+    },
+    email: {
+        type: DataTypes.STRING,
+        references: {
+          model: 'employer',
+          key: 'email'
+        },
+        validate: {
+          isEmail: true
+        },
+    },
   },
   {
     sequelize,

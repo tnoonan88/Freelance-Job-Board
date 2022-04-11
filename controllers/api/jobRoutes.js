@@ -14,6 +14,10 @@ router.get('/', (req, res) => {
     });
   });
 
+router.get('/search/:posting', (req, res) => {
+  // Job.findByPk
+})
+
 //Add route
 
   router.post('/', (req, res) => {
