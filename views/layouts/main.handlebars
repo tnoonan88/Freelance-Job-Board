@@ -9,12 +9,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="../../public/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
 
 <body>
   <header>
-    <h1>Welcome Yeet-a-Job</h1>
+    <h1>Welcome To Yeet-a-Job</h1>
   </header>
   <nav>
     <a class="nav--link" href="/">Home</a>
@@ -23,18 +23,23 @@
     <button id="logout" class="btn-no-style">Logout</button>
     {{else}}
     <!-- Otherwise, show a link to login -->
-    <a href="/login">Login</a>
+    <a class="nav--link" href="/login">Login</a>
     {{/if}}
   </nav>
+    <img class="hero--image" src="/images/luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="A computer screen with code">
   <main>
-    <div class=>
+    <div class="container">
       {{{body}}}
     </div>
   </main>
   <!-- If the user is logged in, load the JS script for when they logout -->
   {{#if loggedIn}}
-  <script src="../../public/lib/logout.js"></script>
+  <script src="/lib/logout.js"></script>
   {{/if}}
+  <footer>
+    <a class="footer--link" href="#">Jump to top</a>
+    <a class="footer--link" href="https://github.com/tnoonan88/Freelance-Job-Board">Follow this link for our Github</a>
+  </footer>
 </body>
 
 </html>
