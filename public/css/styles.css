@@ -103,6 +103,7 @@ h3 {
   margin-left: 5rem;
   margin-right: 5rem;
   padding: 2rem;
+  padding-top: 4rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -113,26 +114,30 @@ h3 {
 }
 
 .card__title {
+  font-weight: bolder;
   padding-bottom: 2rem;
 }
 
-/*.container {
-  padding-left: 10rem;
-}*/
 
 footer {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding-top: 10rem;
-  padding-bottom: 5rem;
+  font-size: 1.8rem;
+  margin-bottom: 8rem;
+  margin-top: 10rem;
 }
+
+@media screen and (min-width: 768px) {
+  footer {
+    font-size: 2rem;
+  }
+}  
 
 .footer--link {
   margin-right: 3rem;
   color: var(--color-secondary);
-  margin-left: 10rem;
-  margin-top: 5rem;
+  margin-left: 5rem;
   transition: color 0.3s;
 }
 
@@ -143,6 +148,7 @@ footer {
 label {
   display: inline-block;
   font-size: 1.5rem;
+  font-weight: bold;
   width: 10rem;
 }
 
@@ -164,20 +170,18 @@ nav {
 }
 
 .nav--link {
-  margin-right: 3rem;
   color: var(--color-secondary);
-  margin-left: 10rem;
+  margin-left: 5rem;
+  margin-right: 3rem;
   transition: color 0.3s;
 }
 
 .redirect--link {
+  color: var(--color-accent);
   display: flex;
   font-size: 4rem;
   justify-content: center;
-  color: var(--color-accent);
   margin-top: 5rem;
+  transition: color .3s;
 }
 
-.redirect--link:hover {
-  transition: color .03s;
-}
