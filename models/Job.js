@@ -28,6 +28,10 @@ Job.init(
     skills: {
         type: DataTypes.STRING,
     },
+    salary: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+    },
     email: {
         type: DataTypes.STRING,
         references: {

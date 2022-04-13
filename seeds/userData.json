@@ -25,7 +25,7 @@
   },
   {
     "name": "Ed",
-    "email" "Ed@test.com",
+    "email": "Ed@test.com",
     "skills": "javascript",
     "password": "password12345"
   },
