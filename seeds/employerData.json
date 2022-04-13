@@ -13,5 +13,35 @@
     "name": "Employees of the Month LLC",
     "email": "zachpcodes@gmail.com",
     "password": "password12345"
+  },
+  {
+    "name": "Acme Co",
+    "email": "test@acme.com",
+    "password": "password12345"
+  },
+  {
+    "name": "Test Corp",
+    "email": "test@test.com",
+    "password": "password12345"
+  },
+  {
+    "name": "Fake Data LLC",
+    "email": "test@fdllc.com",
+    "password": "password12345"
+  },
+  {
+    "name": "Smol Corp",
+    "email": "HR@smolcorp.com",
+    "password": "password12345"
+  },
+  {
+    "name": "Simplify",
+    "email": "CEO@simplify.com",
+    "password": "password12345"
+  },
+  {
+    "name": "American Company",
+    "email": "HR@americancompany.com",
+    "password": "password12345"
   }
 ]
