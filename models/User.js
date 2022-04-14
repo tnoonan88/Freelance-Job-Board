@@ -38,6 +38,11 @@ User.init(
         len: [8],
       }
     },
+    jobrole: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      // 0=employee 1=dev
+    },
   },
   {
     // hooks: {

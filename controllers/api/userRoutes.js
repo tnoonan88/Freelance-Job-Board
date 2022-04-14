@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { User } = require('../../models');
+const withAuth = require('../../utils/auth');
 
 router.get('/', (req, res) => {
     User.findAll()
@@ -12,28 +13,6 @@ router.get('/', (req, res) => {
     });
   });
 
-//Add route
-
-  router.post('/', (req, res) => {
-    /* req.body should look like this...
-      {
-        Name: "John Doe",
-        Skills: "Javascript",
-        Email: "test@test.com",
-        Password: Test1234
-      }
-    */
-    User.create(req.body)
-      .then((user) => {
-        res.status(200).json(job);
-      })
-      .catch((err) => {
-        console.log(err);
-        res.status(400).json(err);
-      });
-  });
- 
-//Delete
 
 router.delete('/:id', (req, res) => {
     // delete one product by its `id` value
@@ -58,8 +37,6 @@ router.delete('/:id', (req, res) => {
         res.status(500).json(err);
       });
   });
-  
-  module.exports = router;
 
 router.post('/', async (req, res) => {
   try {
@@ -107,6 +84,8 @@ router.post('/login', async (req, res) => {
     res.status(400).json(err);
   }
 });
+
+// users by id route
 
 router.post('/logout', (req, res) => {
   if (req.session.logged_in) {
