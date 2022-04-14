@@ -35,4 +35,10 @@ router.get("/profile", withAuth, async (req, res) => {
   }
 });
 
+// router.get('/postings', withAuth, async (req, res) => {
+//   try {
+//     const
+//   }
+// });
+
 module.exports = router;
