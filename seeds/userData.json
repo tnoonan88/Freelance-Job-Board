@@ -3,54 +3,63 @@
     "name": "Adam",
     "email": "adam@test.com",
     "skills": "html, css",
-    "password": "password12345"
+    "password": "password12345",
+    "role": 1
   },
   {
     "name": "Beth",
     "email": "beth@test.com",
     "skills": "javascript",
-    "password": "password12345"
+    "password": "password12345",
+    "role": 1
   },
   {
     "name": "Chris",
     "email": "chris@test.com",
     "skills": "sql, node",
-    "password": "password12345"
+    "password": "password12345",
+    "role": 1
   },
   {
     "name": "Deb",
     "email": "deb@test.com",
     "skills": "html, css",
-    "password": "password12345"
+    "password": "password12345",
+    "role": 1
   },
   {
     "name": "Ed",
     "email": "Ed@test.com",
     "skills": "javascript",
-    "password": "password12345"
+    "password": "password12345",
+    "role": 1
   },
   {
     "name": "Frida",
     "email": "frida@test.com",
     "skills": "sql, node",
-    "password": "password12345"
+    "password": "password12345",
+    "role": 1
   },
   {
     "name": "Gus",
     "email": "gus@test.com",
     "skills": "html, css",
-    "password": "password12345"
+    "password": "password12345",
+    "role": 1
   },
   {
     "name": "Hugo",
     "email": "hugo@test.com",
     "skills": "javascript",
-    "password": "password12345"
+    "password": "password12345",
+    "role": 1
   },
   {
     "name": "Ida",
     "email": "ida@test.com",
     "skills": "sql, node",
-    "password": "password12345"
+    "password": "password12345",
+    "role": 1
   }
 ]
