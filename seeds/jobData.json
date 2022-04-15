@@ -1,17 +1,55 @@
 [
   {
-    "name": "Javascript Developer",
+    "title": "Javascript Developer",
     "description": "A Developer proficient in Javascript for a short project",
-    "skills": "Javascript, Node, HTML"
+    "skills": "Javascript, Node, HTML",
+    "salary": 12345
   },
   {
-    "name": "Front End Developer",
+    "title": "Front End Developer",
     "description": "My website is ugly please help",
-    "skills": "HTML, CSS"
+    "skills": "HTML, CSS",
+    "salary": 12345
   },
   {
-    "name": "Database Admin",
+    "title": "Database Admin",
     "description": "My database needs administration",
-    "skills": "SQL"
+    "skills": "SQL",
+    "salary": 12345
+  },
+  {
+    "title": "Javascript Developer 2",
+    "description": "A Developer proficient in Javascript for a short project",
+    "skills": "Javascript, Node, HTML",
+    "salary": 12345
+  },
+  {
+    "title": "Front End Developer 2",
+    "description": "My website is ugly please help",
+    "skills": "HTML, CSS",
+    "salary": 12345
+  },
+  {
+    "title": "Database Admin 2",
+    "description": "My database needs administration",
+    "skills": "SQL",
+    "salary": 12345
+  },  {
+    "title": "Javascript Developer 3",
+    "description": "A Developer proficient in Javascript for a short project",
+    "skills": "Javascript, Node, HTML",
+    "salary": 12345
+  },
+  {
+    "title": "Front End Developer 3",
+    "description": "My website is ugly please help",
+    "skills": "HTML, CSS",
+    "salary": 12345
+  },
+  {
+    "title": "Database Admin 3",
+    "description": "My database needs administration",
+    "skills": "SQL",
+    "salary": 12345
   }
 ]
