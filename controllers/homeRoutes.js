@@ -63,7 +63,7 @@ router.get('/listings', withAuth, (req, res) => {
     console.log(results)
     const jobsData = results.map((job) => job.get({ plain: true }));
     console.log(jobsData)
-    res.render('posts-details', {
+    res.render('listings', {
       jobsData, 
       logged_in: true
     });
