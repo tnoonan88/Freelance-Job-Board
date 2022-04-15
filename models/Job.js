@@ -15,7 +15,7 @@ Job.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
-        model: 'employer',
+        model: 'user',
         key: 'id'
       },
     },
@@ -34,10 +34,10 @@ Job.init(
     },
     email: {
         type: DataTypes.STRING,
-        references: {
-          model: 'employer',
-          key: 'email'
-        },
+        // references: {
+        //   model: 'employer',
+        //   key: 'email'
+        // },
         validate: {
           isEmail: true
         },

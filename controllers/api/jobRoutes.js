@@ -14,9 +14,21 @@ router.get('/', (req, res) => {
     });
   });
 
-router.get('/search/:posting', (req, res) => {
-  // Job.findByPk
-})
+  router.get('/job/:id', async (req, res) => {
+    try {
+      const jobData = await Job.findByPk(req.params.id, {
+      });
+  
+      const job = jobData.get({ plain: true });
+  
+      res.render('post-details', {
+        ...job,
+        logged_in: req.session.logged_in
+      });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
 
 //Add route
 
