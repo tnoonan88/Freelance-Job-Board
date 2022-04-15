@@ -1,7 +1,7 @@
 const newFormHandler = async (event) => {
     event.preventDefault();
   
-    const title = document.querySelector('#postTitle').value.trim();
+    const title = document.querySelector('input[name="title"]').value.trim();
     const skills = document.querySelector('#requiredSkills').value.trim();
     const salary = document.querySelector('#recSalary').value.trim();
     const description = document.querySelector('#jobDescription').value.trim();

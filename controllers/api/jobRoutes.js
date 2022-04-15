@@ -2,9 +2,7 @@ const router = require('express').Router();
 const { Job, Employer, User } = require('../../models');
 
 router.get('/', (req, res) => {
-    Job.findAll({
-      include: [{Employer: employer_name}],
-    })
+    Job.findAll()
     .then((results) => {
       res.json(results);
     })
@@ -45,7 +43,6 @@ router.get('/', (req, res) => {
       .then((job) => {
         res.status(200).json(job);
       })
-      .then((employer_id) => res.status(200).json(employer_id))
       .catch((err) => {
         console.log(err);
         res.status(400).json(err);
