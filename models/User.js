@@ -41,7 +41,7 @@ User.init(
     jobrole: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      // 0=employee 1=dev
+      // 0=employer 1=dev
     },
   },
   {
