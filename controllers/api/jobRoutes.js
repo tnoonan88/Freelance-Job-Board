@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Job, Employer, User } = require('../../models');
+const { Job, User } = require('../../models');
 
 router.get('/', (req, res) => {
     Job.findAll()
@@ -28,9 +28,7 @@ router.get('/', (req, res) => {
     }
   });
 
-//Add route
-
-  router.post('/', (req, res) => {
+router.post('/', (req, res) => {
     /* req.body should look like this...
       {
         job_title: "Developer",
@@ -47,9 +45,8 @@ router.get('/', (req, res) => {
         console.log(err);
         res.status(400).json(err);
       });
-  });
+});
  
-//Delete
 
 router.delete('/:id', (req, res) => {
     // delete one product by its `id` value
