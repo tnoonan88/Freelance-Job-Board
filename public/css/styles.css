@@ -147,14 +147,15 @@ h3 {
 }
 
 .div--listing {
+  align-content: stretch;
+  align-items: center;
+  border-bottom: var(--color-accent) solid 1px;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
-  margin-right: -1.5rem;
-  margin-left: 5rem;
-  align-content: stretch;
   justify-content: space-evenly;
-  align-items: center;
+  margin-bottom: 2rem;
+  margin-left: 5rem;
+  margin-right: -1.5rem;
 }
 
 
@@ -268,6 +269,7 @@ nav {
 .p--profile {
   color: var(--color-primary);
   font-size: 1.8rem;
+  margin-bottom: 10rem;
 }
 
 .redirect--link {
