@@ -1,11 +1,28 @@
-# Freelance-Job-Board
-
-As A User, I want to be able to find commissions to fit my skill set.
-
-As A User, I want a platform that I showcase my skill set that people need.
-
-As A Employer, I want to post commissions that can handled by other people.
-
-As A Employer, I want to find competent freelancers and see their skill sets.
-
-As A Employer and User, I want a easy and User-friendly platform that can post and take commissions from for monetary value.
+# Table of Contents
+  1. [Title](#Title)
+  2. [Description](#Description)
+  3. [Installation](#Installation)
+  4. [Benefits](#Benefits)
+  5. [Licenses](#Licenses)
+  6. [Contributions](#Contributions)
+  7. [Test](#Test)
+  8. [Github](#Github)
+  9. [Email](#Email)
+  
+  # Freelance Job Board
+# Description
+A full stack application where employers can post job opportunities and be contacted by prospective employees
+# Installation
+download respository, run npm i to install dependencies, npm start to launch to localhost
+# Benefits
+A simple interface for employees to see opportunities, easy for employers to post new jobs
+# Licenses
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Contributions
+Tom Noonan (https://github.com/tnoonan88), Richard Murphy (https://github.com/richinatl), Sam Leclerc (https://github.com/Samuel1738c), Zach Picklesimer (https://github.com/picks_6)
+# Test
+Tested on localhost
+# Github
+picks6
+# Email
+ZachPCodes@gmail.com
