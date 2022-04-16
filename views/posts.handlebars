@@ -1,20 +1,20 @@
 <div>
    <form class="newPost">
        <div>
-           <input class="form-control" name="title" id="#postTitle" type="text" placeholder="Job or Project Title">
-           <input class="form-control" name="skills" id="requiredSkills" type="text" placeholder="Required skills">
-           <input class="form-control" name="salary" id="recSalary" type="text" placeholder="Salary">
+           <input class="form-control input--newPost" name="title" id="#postTitle" type="text" placeholder="Job or Project Title">
+           <input class="form-control input--newPost" name="skills" id="requiredSkills" type="text" placeholder="Required skills">
+           <input class="form-control input--newPost" name="salary" id="recSalary" type="text" placeholder="Salary">
        </div>   
-        <div class="form-group">
+        <div class="form-group textarea--jobDescription">
             <label for="jobDescription">Job Description</label>
-            <textarea class="form-control" id="jobDescription" rows="3"></textarea>
+            <textarea class="form-control textarea--jobDescription" id="jobDescription" rows="3"></textarea>
         </div>
-        <div class="form-group">
+        <div class="form-group input--jobDescription">
             <label for="employerEmail">Email address</label>
-            <input type="email" class="form-control" id="employerEmail" placeholder="name@example.com">
+            <input type="email" class="form-control jobDescription" id="employerEmail" placeholder="name@example.com">
         </div>
+        <div class="delete--button btn--jobDescrition">
             <button type="submit" class="btn btn-primary">Create</button>
-        <div class="delete--button">
             <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>
         </div>    
     </form>
