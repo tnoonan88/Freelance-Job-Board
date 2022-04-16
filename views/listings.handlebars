@@ -1,19 +1,17 @@
 {{#each jobsData as |job| }}
-<div class="row mb-4 job">
+<div class="div--listing">
   <div class="col-md-5">
-    <h2>
-      <a href="/job/{{job.id}}">{{job.title}}</a>
-    </h2>
-    <p>Created by {{job.user.name}}</p>
-    <p>
+    <h2 class="h2--listing">{{job.title}}</h2>
+    <p class="p--listing">Created by {{job.user.name}}</p>
+    <p class="p--listing">
       Contact: {{job.email}}
     </p>
   </div>
   <div class="col-md-7">
-    <p>
+    <p class="listing__description">
       {{job.description}}
     </p>
-    <p>
+    <p class="listing__description">
       {{job.skills}}
     </p>
   </div>

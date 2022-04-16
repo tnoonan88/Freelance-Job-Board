@@ -20,9 +20,9 @@
     <a class="nav--link" href="/profile">Home</a>
     <!-- If the user is logged in, show a logout button -->
     {{#if logged_in}}
-    <a href="/listings">Listings</a>
-    <a href="/posts">Post a Job Listing</a>
-    <button id="logout" class="btn-no-style">Logout</button>
+    <a class ="nav--link" href="/listings">Listings</a>
+    <a class ="nav--link" href="/posts">Post a Job Listing</a>
+    <button class="nav--link btn__logout" id="logout" class="btn-no-style">Logout</button>
     {{else}}
     <!-- Otherwise, show a link to login -->
     <a class="nav--link" href="/login">Login</a>
@@ -30,9 +30,9 @@
   </nav>
     <img class="hero--image" src="/images/luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="A computer screen with code">
   <main>
-    <div class="container">
+    <!--<div class="container">-->
       {{{body}}}
-    </div>
+    <!--</div>-->
   </main>
   <!-- If the user is logged in, load the JS script for when they logout -->
   {{#if loggedIn}}

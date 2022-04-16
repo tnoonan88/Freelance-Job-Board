@@ -71,6 +71,16 @@ h3 {
   }
 }
 
+.h2--profile {
+  color: var(--color-primary);
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+.h2--listing {
+  color: var(--color-primary);
+}
+
 .btn {
   background-color: var(--color-secondary);
   border-radius: 40px;
@@ -93,6 +103,17 @@ h3 {
   .btn {
     font-size: 2rem;
   }
+}
+
+.btn__logout {
+  background: none;
+  border: 0;
+}
+
+.btn__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .card {
@@ -118,13 +139,31 @@ h3 {
   padding-bottom: 2rem;
 }
 
+.div--profile {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.div--listing {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  margin-right: -1.5rem;
+  margin-left: 5rem;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 
 footer {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   font-size: 1.8rem;
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
   margin-top: 10rem;
 }
 
@@ -141,17 +180,34 @@ footer {
   transition: color 0.3s;
 }
 
+.input--newPost {
+  margin-bottom: 2rem;
+}
+
 .label {
   padding-left: 2rem;
 }
 
 label {
+  color: var(--color-primary);
   display: inline-block;
   font-size: 1.5rem;
   font-weight: bold;
   width: 10rem;
 }
 
+
+.link__container {
+  margin-bottom: 3rem;
+}
+
+.link__profile {
+  color: var(--color-secondary);
+  font-size: 1.8rem;
+  margin-left: 5rem;
+  margin-right: 3rem;
+  transition: color 0.3s;
+}
 
 .hero--image {
   height: 60vh;
@@ -160,13 +216,29 @@ label {
   width: 100%;
 }
 
+.listing__description {
+  color: var(--color-primary);
+  font-size: 1.8rem;
+}
+
 nav {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   font-size: 2rem;
   margin-bottom: 2rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+  }
 }
 
 .nav--link {
@@ -174,6 +246,28 @@ nav {
   margin-left: 5rem;
   margin-right: 3rem;
   transition: color 0.3s;
+}
+
+.newPost {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .newPost {
+  padding-left: 14rem;
+  padding-right: 14rem;
+  }
+}  
+
+.p--listing {
+  color: var(--color-primary);
+  font-size: 1.8rem;
+}
+
+.p--profile {
+  color: var(--color-primary);
+  font-size: 1.8rem;
 }
 
 .redirect--link {
