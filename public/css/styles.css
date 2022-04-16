@@ -116,6 +116,13 @@ h3 {
   justify-content: space-around;
 }
 
+.btn--jobDescrition {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-right: 10rem;
+}
+
 .card {
   align-content: space-around;
   align-items: center;
@@ -182,7 +189,15 @@ footer {
 }
 
 .input--newPost {
+  font-size: 1.6rem;
   margin-bottom: 2rem;
+  width: 70vw;
+}
+
+@media screen and (min-width: 768px) {
+  .input--newPost {
+  width: 50vw;
+  }
 }
 
 .hero--image {
@@ -190,6 +205,17 @@ footer {
   padding-bottom: 10rem;
   object-fit: cover;
   width: 100%;
+}
+
+.input--jobDescription {
+  font-size: 2rem;
+  width: 70vw;
+}
+
+@media screen and (min-width: 768px) {
+  .input--jobDescription {
+    width: 50vw;
+  }
 }
 
 .label {
@@ -282,3 +308,13 @@ nav {
   transition: color .3s;
 }
 
+.textarea--jobDescription {
+  font-size: 1.6rem;
+  width: 70vw;
+}
+
+@media screen and (min-width: 768px) {
+  .textarea--jobDescription {
+    width: 50vw;
+  }
+}
