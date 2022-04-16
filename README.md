@@ -1,5 +1,5 @@
 # Table of Contents
-  1. [Title](#Freelance Job Board)
+  1. [Title] (#Freelance Job Board)
   2. [Description](#Description)
   3. [Installation](#Installation)
   4. [Benefits](#Benefits)
